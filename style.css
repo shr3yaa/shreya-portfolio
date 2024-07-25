@@ -294,6 +294,8 @@ section{
 #about .about-pic{
     width: auto;
     height: 40vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .about-containers{
