@@ -51,7 +51,7 @@
   @media screen and (max-width: 600px) {
     #about .about-pic{
         width: auto;
-        height: 30vh;
+        height: 24vh;
     }
     #contact,
     footer {
