@@ -464,13 +464,42 @@ section{
   }
   
   /* Specific styling for individual skills */
+  .project_skills .angular {
+    background-color: #D60330; /* Green background for Android Studio */
+    color: white;
+  }
+
   .project_skills .androidstudio {
     background-color: #3ddc84; /* Green background for Android Studio */
+    color: white;
+  }
+  .project_skills .git {
+    background-color: #E84F32; /* Green background for Android Studio */
     color: white;
   }
   
   .project_skills .google {
     background-color: #4285f4; /* Blue background for Google Cloud Platform */
+    color: white;
+  }
+  .project_skills .javascript {
+    background-color: #EFD81E; /* Green background for Android Studio */
+    color: white;
+  }
+  .project_skills .mongodb {
+    background-color: #4DA53F; /* Green background for Android Studio */
+    color: white;
+  }
+  .project_skills .python {
+    background-color: #366D9C; /* Green background for Android Studio */
+    color: white;
+  }
+  .project_skills .raspberrypi {
+    background-color: #BB2247; /* Green background for Android Studio */
+    color: white;
+  }
+  .project_skills .opencv {
+    background-color: #0000F7; /* Green background for Android Studio */
     color: white;
   }
   /* Contact */
