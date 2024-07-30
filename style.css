@@ -287,6 +287,9 @@ section{
     background-color: #85475A;
     padding: 0%;
 }
+#color-background2{
+    background: radial-gradient(circle at 30% center, rgba(255,192,203,1)0%, rgba(255,192,203,0)30%);
+}
 
 #about p{
     color: #FFF;
@@ -294,15 +297,14 @@ section{
 #about .about-pic{
     width: auto;
     height: 40vh;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 }
 
 .about-containers{
-    gap:2rem;
+    gap:5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 105px));
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -328,18 +330,22 @@ section{
     width: 70px;
     height: 70px;
     right: 5rem;
-    bottom: 0.2rem;
+    bottom: 2.5rem;
 }
 
 .details-container{
-    padding: 1.5rem;
     flex: 1;
-    background: #FFF;
+    /* background: #FFF; */
     border-radius: 2rem;
     min-width: 1rem;
-    border: rgb(53,53,43) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    /* border: rgb(53,53,43) 0.1rem solid; */
     text-align: center;
+    /* background-color: #85475A; */
+}
+
+.details-container p{
+    color: #000;    ;
+
 }
 
 #projects .details-container{
@@ -371,11 +377,10 @@ section{
 /* Experience */
 #experience {
     position: relative;
-    padding-bottom: 5vh;
+    padding-bottom: 5vh;    
   }
   
   .experience-sub-title {
-    color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -385,27 +390,35 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
-     }
+
+}
   
   .article-container {
     display: flex;
-    text-align: initial;
+    text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: space-evenly;
   }
   
   article {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
+    flex-basis: 100px; /* Base width for each article */
+
   }
   
   article .icon {
     cursor: default;
+    width: 4rem;
+    height: 4rem;
+    /* width: 80px;
+    height: 100px; */
   }
 
   /* Projects */
@@ -436,6 +449,30 @@ section{
     border-color: rgb(163,163,163);
   }
 
+  .project_skills{
+    display: block;
+    text-align: center;
+  }
+/* General styling for all skills */
+.project_skills li {
+    background-color: #f1f1f1; /* Light gray background for all skills */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 12px;
+    display: inline-block; /* Make items inline */
+  }
+  
+  /* Specific styling for individual skills */
+  .project_skills .androidstudio {
+    background-color: #3ddc84; /* Green background for Android Studio */
+    color: white;
+  }
+  
+  .project_skills .google {
+    background-color: #4285f4; /* Blue background for Google Cloud Platform */
+    color: white;
+  }
   /* Contact */
 
   #contact{

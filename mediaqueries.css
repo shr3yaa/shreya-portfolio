@@ -38,21 +38,25 @@
       margin: 0 5%;
     }
     .section__pic-container {
-      width: 275px;
       height: 275px;
-      margin: 0 auto 1rem;
-      justify-content: center;
+      margin: 0 auto 2rem;
     }
     .about-containers {
       margin-top: 0;
     }
+    #about .about-pic{
+      width: 40rem;
+      height: auto;
+  }
   }
   
   @media screen and (max-width: 600px) {
+
     #about .about-pic{
-        width: auto;
-        height: 24vh;
-    }
+      width: 20rem;
+      height: auto;
+  }
+
     #contact,
     footer {
       height: 40vh;
@@ -67,6 +71,9 @@
     footer nav {
       height: fit-content;
       margin-bottom: 2rem;
+    }
+    .about-containers{
+      flex-direction: column;
     }
     .about-containers,
     .contact-info-upper-container,
@@ -103,6 +110,7 @@
       font-size: 2rem;
     }
     .text-container {
+        display: flex;
       text-align: justify;
     }
   }
