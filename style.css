@@ -283,6 +283,18 @@ section{
     color: #FFF;
 }
 
+#about .text-container a {
+    color: #FFF;
+    font-weight: bold;
+}
+
+#about .text-container a:hover {
+    color: #D9DDDC;
+    text-decoration:none;
+
+    
+}
+
 #color-background{
     background-color: #85475A;
     padding: 0%;
